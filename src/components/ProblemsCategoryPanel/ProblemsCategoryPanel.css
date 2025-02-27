@@ -1,0 +1,63 @@
+.problems-category-panel {
+  background-color: aliceblue;
+  width: 400px;
+  height: 600px;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-y: scroll;
+}
+
+.problems-category-panel h2 {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.problems-category-panel h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.problems-category-panel ol.prolbems-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.problems-category-panel ol.prolbems-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.problems-category-panel .problem-panel {
+  background-color: aqua;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+.problems-category-panel .problem-panel .difficulty {
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.problems-category-panel .problem-panel .difficulty.easy {
+  background-color: #3dec55;
+}
+
+.problems-category-panel .problem-panel .difficulty.medium {
+  background-color: #ffff00;
+}
+
+.problems-category-panel .problem-panel .difficulty.hard {
+  background-color: #FF0000;
+}
+
+.problems-category-panel .problem-panel .problem-name {
+  width: 215px;
+}
