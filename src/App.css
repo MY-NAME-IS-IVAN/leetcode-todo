@@ -1,8 +1,0 @@
-ul.problem-categories-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style-type: none;
-  gap: 64px;
-}

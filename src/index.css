@@ -40,3 +40,16 @@ body {
   margin: 80px auto;
   user-select: none;
 }
+
+@media (max-width:  1460px) {
+  body {
+    max-width: 900px;
+  }
+}
+
+@media (max-width:  970px) {
+  body {
+    max-width: 600px;
+    padding: 0 24px;
+  }
+}

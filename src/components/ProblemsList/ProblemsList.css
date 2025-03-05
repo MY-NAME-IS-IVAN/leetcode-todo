@@ -1,0 +1,20 @@
+ul.problem-categories-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 64px;
+}
+
+@media (max-width:  970px) {
+  ul.problem-categories-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width:  470px) {
+  ul.problem-categories-list {
+    gap: 48px;
+  }
+}

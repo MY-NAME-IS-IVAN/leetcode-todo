@@ -84,3 +84,26 @@
   text-decoration: none;
   color: var(--primary-white-color);
 }
+
+@media (max-width:  470px) {
+  .problems-category-panel {
+    width: 320px;
+  }
+
+  .problems-category-panel .category-header {
+    padding: 8px;
+  }
+
+  .problems-category-panel ol.prolbems-list {
+    padding: 0 8px;
+  }
+
+  .problems-category-panel .problem-panel .left-section {
+    gap: 8px;
+  }
+
+  .problems-category-panel .problem-panel .difficulty {
+    padding: 4px 4px;
+    font-size: 0.8rem;
+  }
+}

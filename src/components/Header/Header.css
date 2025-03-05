@@ -77,3 +77,27 @@
   align-items: center;
   flex-direction: column;
 }
+
+@media (max-width:  1460px) {
+  .main-header {
+    flex-direction: column;
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width:  470px) {
+  .progress-container .progress-cirlce {
+    width: 90px;
+    height: 90px;
+    font-size: 0.8rem;
+  }
+
+  .progress-container .progress-inner-cirlce {
+    width: 70px;
+    height: 70px;
+  }
+
+  .main-header .progress-list {
+    gap: 8px;
+  }
+}

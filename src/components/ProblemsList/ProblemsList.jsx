@@ -1,3 +1,5 @@
+import './ProblemsList.css'
+
 import ProblemsCategoryPanel from '../../components/ProblemsCategoryPanel/ProblemsCategoryPanel';
 import PropTypes from 'prop-types';
 
