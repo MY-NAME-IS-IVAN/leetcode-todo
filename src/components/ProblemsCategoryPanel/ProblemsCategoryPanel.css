@@ -1,32 +1,32 @@
 .problems-category-panel {
-  background-color: aliceblue;
+  position: relative;
   width: 400px;
-  height: 600px;
-  padding: 16px;
+  padding-top: 0;
   border-radius: 12px;
-  overflow-y: scroll;
+  background-color: var(--secondary-black-color);
+}
+
+.problems-category-panel .category-header {
+  font-size: 1.25rem;
+  padding: 20px;
+  z-index: 1;
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px 12px 0 0;
 }
 
 .problems-category-panel h2 {
-  margin-bottom: 16px;
-  position: relative;
-}
-
-.problems-category-panel h2::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  height: 2px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  font-size: 1.5rem;
 }
 
 .problems-category-panel ol.prolbems-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  padding: 0 20px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-white-color) rgba(255, 255, 255, 0.1);
+  height: 400px;
 }
 
 .problems-category-panel ol.prolbems-list li {
@@ -36,28 +36,51 @@
 }
 
 .problems-category-panel .problem-panel {
-  background-color: aqua;
-  padding: 8px 12px;
-  border-radius: 12px;
+  padding: 20px 0;
+  position: relative;
+  transition: opacity 0.25s ease;
+}
+
+.problems-category-panel .problem-panel.solved {
+  opacity: 0.3;
+}
+
+.problems-category-panel .problem-panel:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+}
+
+.problems-category-panel .problem-panel .left-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .problems-category-panel .problem-panel .difficulty {
-  padding: 4px;
+  padding: 4px 8px;
   border-radius: 4px;
+  font-weight: 700;
 }
 
 .problems-category-panel .problem-panel .difficulty.easy {
-  background-color: #3dec55;
+  background-color: var(--easy-problems-color);
 }
 
 .problems-category-panel .problem-panel .difficulty.medium {
-  background-color: #ffff00;
+  background-color: var(--medium-problems-color);
 }
 
 .problems-category-panel .problem-panel .difficulty.hard {
-  background-color: #FF0000;
+  background-color: var(--hard-problems-color);
 }
 
 .problems-category-panel .problem-panel .problem-name {
   width: 215px;
+  text-decoration: none;
+  color: var(--primary-white-color);
 }

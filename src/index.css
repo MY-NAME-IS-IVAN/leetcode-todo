@@ -7,6 +7,22 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-white-color: #e0e0e0;
+  --primary-black-color: #181818;
+  --secondary-black-color: #1e1e1e;
+
+  --easy-problems-progress: 0%;
+  --medium-problems-progress: 0%;
+  --hard-problems-progress: 0%;
+
+  --easy-problems-color: #4caf50;
+  --medium-problems-color: #ffb74d;
+  --hard-problems-color: #ff5252;
+
+  --easy-problems-dark-color: #1b5e20;
+  --medium-problems-dark-color: #9c6a00;
+  --hard-problems-dark-color: #b71c1c;
 }
 
 * {
@@ -17,6 +33,10 @@
 
 body {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 1400px;
+  position: relative;
+  color: var(--primary-white-color);
+  background-color: var(--primary-black-color);
+  margin: 80px auto;
+  user-select: none;
 }

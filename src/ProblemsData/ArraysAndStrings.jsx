@@ -208,7 +208,7 @@ const arraysAndStringsCategory = [
   jumpGame,
   mergeIntervals,
   insertInterval,
-  largestNumber,
+  largestNumber
 ];
 
 export default arraysAndStringsCategory;

@@ -1,0 +1,25 @@
+.problem-checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px var(--primary-white-color) solid;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.25s ease;
+}
+
+.problem-checkbox.checked {
+  background-color: var(--primary-white-color);
+}
+
+.problem-checkbox .checked-icon {
+  color: transparent;
+  transition: color 0.25s ease;
+}
+
+.problem-checkbox.checked .checked-icon {
+  color: var(--primary-black-color);
+}
